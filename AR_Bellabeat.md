@@ -1972,7 +1972,7 @@ fbt_gauge <- subplot(fbt_usage_gauge, fbt_under20h_gauge,options(warn = -1))
 #fbt_gauge
 ```
 <p align="center">
-<img src="newplot.png" style="display: block; margin: auto;" />
+<img src="AR_Bellabeat_files/figure-gfm/newplot.png" style="display: block; margin: auto;" />
 </p>
 
 In view of answering the question whether the tracker was worn all day,

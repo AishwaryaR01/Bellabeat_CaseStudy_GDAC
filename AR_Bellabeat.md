@@ -1701,7 +1701,9 @@ grid.arrange(sed_plot,lact_plot,nrow = 1, top = "Correlation Plots - Per-day Act
     ## `geom_smooth()` using formula = 'y ~ x'
     ## `geom_smooth()` using formula = 'y ~ x'
 
-<img src="AR_Bellabeat_files/figure-gfm/analyze-share-cal-1.png" style="display: block; margin: auto;" class="center"/>
+<p align="center">
+<img src="AR_Bellabeat_files/figure-gfm/analyze-share-cal-1.png" style="display: block; margin: auto;" />
+</p>
 
 ``` r
 grid.arrange(fact_plot,vact_plot,nrow = 1, top = "Correlation Plots - Per-day Activity Levels and Calories burnt")
@@ -1904,8 +1906,9 @@ fbt_week_usage %>%
 ```
 
     ## `geom_smooth()` using method = 'loess' and formula = 'y ~ x'
-
+<p align="center">
 <img src="AR_Bellabeat_files/figure-gfm/analyze-share-fbtuse24h-1.png" style="display: block; margin: auto;" />
+</p>
 
 ``` r
 #Tracker put on by a user less than 20 hours everyday

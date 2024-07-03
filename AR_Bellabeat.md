@@ -1961,9 +1961,9 @@ fbt_under20h_gauge <- fbt_under20h_gauge %>% layout(margin = list(l=20,r=30))
 fbt_gauge <- subplot(fbt_usage_gauge, fbt_under20h_gauge,options(warn = -1))
 #fbt_gauge
 ```
-
+<p align="center">
 <img src="newplot.png" style="display: block; margin: auto;" />
-
+</p>
 In view of answering the question whether the tracker was worn all day,
 the usage level of the fitness tracker is nearly 45.22%, given 24 hours
 (left gauge chart). Further, the line chart and the gauge chart (right)
@@ -2093,7 +2093,7 @@ strategies:
   The app must emphasize on including muscle-strengthning exercises
   (could be yoga at home or guided workouts at gym) aligning with [CDC’s
   recommendations](https://www.cdc.gov/physical-activity-basics/guidelines/adults.html?CDC_AAref_Val=https://www.cdc.gov/physicalactivity/basics/adults/index.htm).
-  A
+  
 - **Rewards and Membership Offers:** Bellabeat customers can be offered
   rewards (on achieving a self-set weekly goal) that can be redeemed to
   acquire 1-month free premium membership that offers virtual support

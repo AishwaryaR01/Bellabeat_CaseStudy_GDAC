@@ -1711,8 +1711,9 @@ grid.arrange(fact_plot,vact_plot,nrow = 1, top = "Correlation Plots - Per-day Ac
 
     ## `geom_smooth()` using formula = 'y ~ x'
     ## `geom_smooth()` using formula = 'y ~ x'
-
+<p align="center">
 <img src="AR_Bellabeat_files/figure-gfm/analyze-share-cal-2.png" style="display: block; margin: auto;" />
+</p>
 
 ``` r
 #cor.test(fbt_daily_activity_merged$very_active_minutes,fbt_daily_activity_merged$calories)
@@ -1752,8 +1753,9 @@ title(main="Activity Levels (%)", cex.main = 1.4,line=-0.5)
 #title(sub = "(measured in minutes)",cex.sub = 1, line=-19)
 legend(0.75,0.99,pie_labels,cex = 0.7, fill = pie_colours)
 ```
-
+<p align="center">
 <img src="AR_Bellabeat_files/figure-gfm/analyze-share-level-1.png" style="display: block; margin: auto;" />
+</p>
 
 ``` r
 #legend("topright",pie_labels,cex = 0.7, fill = pie_colours)
@@ -1780,8 +1782,9 @@ fbt_hourly_activity_merged$activity_hourly_tm <- format(fbt_hourly_activity_merg
         legend.title = element_text(size=14),legend.text = element_text(size=13)) +
   guides(fill = guide_colourbar(reverse = TRUE))
 ```
-
+<p align="center">
 <img src="AR_Bellabeat_files/figure-gfm/analyze-share-activity-1.png" style="display: block; margin: auto;" />
+</p>
 
 ``` r
 #Most active day of the week
@@ -1798,8 +1801,9 @@ fbt_hourly_activity_merged %>%
         axis.title.x = element_text(size = 15), axis.title.y = element_text(size = 15),
         legend.title = element_text(size=14,vjust = 3.5), legend.text = element_text(size=13))
 ```
-
+<p align="center">
 <img src="AR_Bellabeat_files/figure-gfm/analyze-share-activity-2.png" style="display: block; margin: auto;" />
+</p>
 
 ``` r
 #To verify that Tuesday and Saturday are the most active days and Sunday is the least active day.
@@ -1815,8 +1819,9 @@ fbt_daily_activity_merged %>%
         axis.title.x = element_text(size = 15,vjust = -0.2), axis.title.y = element_text(size = 15,vjust = 1.9),
         legend.title = element_text(size=14,vjust = 3.5), legend.text = element_text(size=13))
 ```
-
+<p align="center">
 <img src="AR_Bellabeat_files/figure-gfm/analyze-share-activity-3.png" style="display: block; margin: auto;" />
+</p>
 
 The column charts above suggest users being physically active (average)
 on Saturday (highest activty), followed by Tuesday. Besides, Sunday
@@ -1866,7 +1871,9 @@ title(main="FitBit Device Usage Levels - All Users (%)", cex.main = 1.4,line=-2)
 legend(0.78,0.75,label1,cex = 0.7, fill = pie_colours)
 ```
 
+<p align="center">
 <img src="AR_Bellabeat_files/figure-gfm/analyze-share-fbtuse-1.png" style="display: block; margin: auto;" />
+</p>
 
 The pie chart depicts a mere 3% of the surveyed users utilizing their
 fitness trackers for a maximum of 1-10 days, with nearly 24% users using
@@ -1967,6 +1974,7 @@ fbt_gauge <- subplot(fbt_usage_gauge, fbt_under20h_gauge,options(warn = -1))
 <p align="center">
 <img src="newplot.png" style="display: block; margin: auto;" />
 </p>
+
 In view of answering the question whether the tracker was worn all day,
 the usage level of the fitness tracker is nearly 45.22%, given 24 hours
 (left gauge chart). Further, the line chart and the gauge chart (right)
@@ -2028,8 +2036,9 @@ ggplot(fbt_log_freq,aes(y=log_freq, x=act, label = log_freq)) + geom_col(width=0
         axis.title.y = element_text(size = 14,vjust = 1.8), legend.title = element_text(size=13,vjust = 3.5),legend.text = element_text(size=13),
         legend.position = "right")
 ```
-
+<p align="center">
 <img src="AR_Bellabeat_files/figure-gfm/analyze-share-fbtlogfreq-1.png" style="display: block; margin: auto;" />
+</p>
 
 This stacked barplot provides an overview of the frequency of data
 logging done by the fitness tracker users. Clearly, all 33 users track

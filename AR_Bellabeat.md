@@ -1701,7 +1701,7 @@ grid.arrange(sed_plot,lact_plot,nrow = 1, top = "Correlation Plots - Per-day Act
     ## `geom_smooth()` using formula = 'y ~ x'
     ## `geom_smooth()` using formula = 'y ~ x'
 
-<img src="AR_Bellabeat_files/figure-gfm/analyze-share-cal-1.png" style="display: block; margin: auto;" />
+<img src="AR_Bellabeat_files/figure-gfm/analyze-share-cal-1.png" style="display: block; margin: auto;" class="center"/>
 
 ``` r
 grid.arrange(fact_plot,vact_plot,nrow = 1, top = "Correlation Plots - Per-day Activity Levels and Calories burnt")

@@ -25,8 +25,7 @@ Aishwarya Ramamurthy (Last Updated: 3 July 2024)
   - [Recommendations](#recommendations)
 - [Conclusion](#conclusion)
 
-.class{
- display: none;
+<p hidden>
 <style type="text/css">
     display: none;
     h4.author{
@@ -65,7 +64,8 @@ img {
     width: 50%;
 }
 </style>
-}
+</p>
+
 # Overview
 
 This is a case study completed and presented as part of the [Google Data

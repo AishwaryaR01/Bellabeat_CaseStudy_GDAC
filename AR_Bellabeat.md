@@ -1,5 +1,4 @@
-How Can a Wellness Technology Company Play It Smart? - Bellabeat Case
-Study
+How Can a Wellness Technology Company Play It Smart? - Bellabeat Case Study
 ================
 Aishwarya Ramamurthy (Last Updated: 4 July 2024)
 
@@ -22,7 +21,7 @@ Aishwarya Ramamurthy (Last Updated: 4 July 2024)
   - [3.2 Data Cleaning](#32-data-cleaning)
 - [Stage 4: Analyze and Share](#stage-4-analyze-and-share)
 - [Stage 5: Act](#stage-5-act)
-  - [Recommendations](#recommendations)
+  - [5.1 Recommendations](#recommendations)
 - [Conclusion](#conclusion)
 
 # Overview
@@ -2022,7 +2021,7 @@ on their wrist.
 
 ## Recommendations
 
-Extending these trends to Bellbeat customers, a significant section may
+Extending these trends to Bellabeat customers, a significant section may
 have to commute to their workplace (possibly follwing a 9am - 6pm
 schedule). In particular, desk jobs suggests higher amount of inactivity
 due to longer seating hourse (further adding to a sedentary activity

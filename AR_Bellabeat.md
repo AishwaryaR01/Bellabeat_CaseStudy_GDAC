@@ -1,7 +1,7 @@
 How Can a Wellness Technology Company Play It Smart? - Bellabeat Case
 Study
 ================
-Aishwarya Ramamurthy (Last Updated: 3 July 2024)
+Aishwarya Ramamurthy (Last Updated: 4 July 2024)
 
 - [Overview](#overview)
 - [Bellabeat: A Fem-Tech Pioneer](#bellabeat-a-fem-tech-pioneer)

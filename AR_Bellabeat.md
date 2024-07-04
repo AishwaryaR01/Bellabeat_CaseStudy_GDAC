@@ -25,8 +25,7 @@ Aishwarya Ramamurthy (Last Updated: 3 July 2024)
   - [Recommendations](#recommendations)
 - [Conclusion](#conclusion)
 
-<div style="display: none">
-<style type="text/css">
+<style type="text/css" display="none">
     h4.author{
      font-style:italic;
      font-size:15px;
@@ -63,7 +62,6 @@ img {
     width: 50%;
 }
 </style>
-</div>
 
 # Overview
 

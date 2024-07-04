@@ -25,47 +25,6 @@ Aishwarya Ramamurthy (Last Updated: 3 July 2024)
   - [Recommendations](#recommendations)
 - [Conclusion](#conclusion)
 
-<p hidden>
-<style type="text/css">
-    display: none;
-    h4.author{
-     font-style:italic;
-     font-size:15px;
-    }
-    h1.title{
-     font-size:26px;
-    }
-    h1 { /* Header 1 */
-     font-size:24px;
-    }
-    h2 { /* Header 2 */
-     font-size: 21px;
-    }
-    h3 { /* Header 3 */
-     font-size: 18px;
-    }
-    <!-- body{ /* Normal  */ -->
-    <!--   font-size: 13px; -->
-    <!-- } -->
-<!-- td {  /* Table  */ -->
-<!--   font-size: 8px; -->
-<!-- } -->
-<!-- code.r{ /* Code block */ -->
-<!--     font-size: 12px; -->
-<!-- } -->
-<!-- pre { /* Code block - determines code spacing between lines */ -->
-<!--     font-size: 14px; -->
-<!-- } -->
-img {
-    display: block;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-</style>
-</p>
-
 # Overview
 
 This is a case study completed and presented as part of the [Google Data

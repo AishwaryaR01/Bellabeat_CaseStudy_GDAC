@@ -800,7 +800,7 @@ print(names(fitbit_df_clean)<-gsub("^(.{0})(.*)$","\\1fbt_\\2",names(fitbit_df_c
     ## [13] "fbt_daily_steps"        "fbt_daily_sleep"        "fbt_weight_log_info"
 
 ``` r
-lapply(fitbit_df_clean,head,n=3)
+lapply(fitbit_df_clean,head,n=3,options(tibble.width=Inf))
 ```
 
     ## $fbt_heartrate_seconds
@@ -861,11 +861,11 @@ lapply(fitbit_df_clean,head,n=3)
     ## 
     ## $fbt_hourly_intensities
     ## # A tibble: 3 × 5
-    ##          id activity_hour total_intensity average_intensity activity_hourly_dttm
-    ##       <dbl> <chr>                   <dbl>             <dbl> <dttm>              
-    ## 1    1.50e9 4/12/2016 12…              20             0.333 2016-04-12 00:00:00 
-    ## 2    1.50e9 4/12/2016 1:…               8             0.133 2016-04-12 01:00:00 
-    ## 3    1.50e9 4/12/2016 2:…               7             0.117 2016-04-12 02:00:00 
+    ##           id activity_hour         total_intensity average_intensity activity_hourly_dttm 
+    ##        <dbl> <chr>                           <dbl>             <dbl> <dttm>                 
+    ## 1 1503960366 4/12/2016 12:00:00 AM              20             0.333 2016-04-12 00:00:00  
+    ## 2 1503960366 4/12/2016 1:00:00 AM                8             0.133 2016-04-12 01:00:00  
+    ## 3 1503960366 4/12/2016 2:00:00 AM                7             0.117 2016-04-12 02:00:00  
     ## 
     ## $fbt_hourly_steps
     ## # A tibble: 3 × 4
@@ -876,18 +876,22 @@ lapply(fitbit_df_clean,head,n=3)
     ## 3 1503960366 4/12/2016 2:00:00 AM         151 2016-04-12 02:00:00 
     ## 
     ## $fbt_daily_activity
-    ## # A tibble: 3 × 16
-    ##           id activity_date total_steps total_distance tracker_distance
-    ##        <dbl> <chr>               <dbl>          <dbl>            <dbl>
-    ## 1 1503960366 4/12/2016           13162           8.5              8.5 
-    ## 2 1503960366 4/13/2016           10735           6.97             6.97
-    ## 3 1503960366 4/14/2016           10460           6.74             6.74
-    ## # ℹ 11 more variables: logged_activities_distance <dbl>,
-    ## #   very_active_distance <dbl>, moderately_active_distance <dbl>,
-    ## #   light_active_distance <dbl>, sedentary_active_distance <dbl>,
-    ## #   very_active_minutes <dbl>, fairly_active_minutes <dbl>,
-    ## #   lightly_active_minutes <dbl>, sedentary_minutes <dbl>, calories <dbl>,
-    ## #   activity_date_dt <date>
+    # A tibble: 3 × 16
+    ##           id activity_date total_steps total_distance tracker_distance logged_activities_distance very_active_distance moderately_active_distance
+    ##        <dbl> <chr>               <dbl>          <dbl>            <dbl>                      <dbl>                <dbl>                      <dbl>
+    ## 1 1503960366 4/12/2016           13162           8.5              8.5                           0                 1.88                      0.550
+    ## 2 1503960366 4/13/2016           10735           6.97             6.97                          0                 1.57                      0.690
+    ## 3 1503960366 4/14/2016           10460           6.74             6.74                          0                 2.44                      0.400
+    ##   light_active_distance sedentary_active_distance very_active_minutes fairly_active_minutes lightly_active_minutes sedentary_minutes calories
+    ##                 <dbl>                     <dbl>               <dbl>                 <dbl>                  <dbl>             <dbl>    <dbl>
+    ## 1                6.06                         0                  25                    13                    328               728     1985
+    ## 2                4.71                         0                  21                    19                    217               776     1797
+    ## 3                3.91                         0                  30                    11                    181              1218     1776
+    ##   activity_date_dt 
+    ##   <date>           
+    ## 1 2016-04-12       
+    ## 2 2016-04-13       
+    ## 3 2016-04-14       
     ## 
     ## $fbt_daily_calories
     ## # A tibble: 3 × 4
@@ -898,16 +902,17 @@ lapply(fitbit_df_clean,head,n=3)
     ## 3 1503960366 4/14/2016        1776 2016-04-14      
     ## 
     ## $fbt_daily_intensities
-    ## # A tibble: 3 × 11
-    ##           id activity_day sedentary_minutes lightly_active_minutes
-    ##        <dbl> <chr>                    <dbl>                  <dbl>
-    ## 1 1503960366 4/12/2016                  728                    328
-    ## 2 1503960366 4/13/2016                  776                    217
-    ## 3 1503960366 4/14/2016                 1218                    181
-    ## # ℹ 7 more variables: fairly_active_minutes <dbl>, very_active_minutes <dbl>,
-    ## #   sedentary_active_distance <dbl>, light_active_distance <dbl>,
-    ## #   moderately_active_distance <dbl>, very_active_distance <dbl>,
-    ## #   activity_date_dt <date>
+    # A tibble: 3 × 11
+    ##           id activity_day sedentary_minutes lightly_active_minutes fairly_active_minutes very_active_minutes sedentary_active_distance
+    ##        <dbl> <chr>                    <dbl>                  <dbl>                 <dbl>               <dbl>                     <dbl>
+    ## 1 1503960366 4/12/2016                  728                    328                    13                  25                         0
+    ## 2 1503960366 4/13/2016                  776                    217                    19                  21                         0
+    ## 3 1503960366 4/14/2016                 1218                    181                    11                  30                         0
+    ##   light_active_distance moderately_active_distance very_active_distance activity_date_dt
+    ##                   <dbl>                      <dbl>                <dbl> <date>          
+    ## 1                  6.06                      0.550                 1.88 2016-04-12      
+    ## 2                  4.71                      0.690                 1.57 2016-04-13      
+    ## 3                  3.91                      0.400                 2.44 2016-04-14 
     ## 
     ## $fbt_daily_steps
     ## # A tibble: 3 × 4
@@ -919,21 +924,19 @@ lapply(fitbit_df_clean,head,n=3)
     ## 
     ## $fbt_daily_sleep
     ## # A tibble: 3 × 6
-    ##           id activity_date         total_sleep_records total_minutes_asleep
-    ##        <dbl> <chr>                               <dbl>                <dbl>
-    ## 1 1503960366 4/12/2016 12:00:00 AM                   1                  327
-    ## 2 1503960366 4/13/2016 12:00:00 AM                   2                  384
-    ## 3 1503960366 4/15/2016 12:00:00 AM                   1                  412
-    ## # ℹ 2 more variables: total_time_in_bed <dbl>, activity_date_dt <date>
+    ##           id activity_date         total_sleep_records total_minutes_asleep total_time_in_bed  activity_date_dt
+    ##        <dbl> <chr>                               <dbl>                <dbl>             <dbl>  <date>
+    ## 1 1503960366 4/12/2016 12:00:00 AM                   1                  327               346  2016-04-12
+    ## 2 1503960366 4/13/2016 12:00:00 AM                   2                  384               407  2016-04-13
+    ## 3 1503960366 4/15/2016 12:00:00 AM                   1                  412               442  2016-04-15
     ## 
     ## $fbt_weight_log_info
     ## # A tibble: 3 × 9
-    ##           id date   weight_kg weight_pounds   fat   bmi is_manual_report  log_id
-    ##        <dbl> <chr>      <dbl>         <dbl> <dbl> <dbl> <lgl>              <dbl>
-    ## 1 1503960366 5/2/2…      52.6          116.    22  22.6 TRUE             1.46e12
-    ## 2 1503960366 5/3/2…      52.6          116.    NA  22.6 TRUE             1.46e12
-    ## 3 1927972279 4/13/…     134.           294.    NA  47.5 FALSE            1.46e12
-    ## # ℹ 1 more variable: activity_date_dttm <dttm>
+    ##           id date                 weight_kg weight_pounds   fat   bmi is_manual_report        log_id activity_date_dttm
+    ##        <dbl> <chr>                    <dbl>         <dbl> <dbl> <dbl> <lgl>                    <dbl> <dttm>
+    ## 1 1503960366 5/2/2016 11:59:59 PM      52.6          116.    22  22.6 TRUE             1462233599000 2016-05-02 23:59:59
+    ## 2 1503960366 5/3/2016 11:59:59 PM      52.6          116.    NA  22.6 TRUE             1462319999000 2016-05-03 23:59:59
+    ## 3 1927972279 4/13/2016 1:08:52 AM     134.           294.    NA  47.5 FALSE            1460509732000 2016-04-13 01:08:52
 
 ``` r
 #Verify survey period equals 31 days:

@@ -25,8 +25,8 @@ Aishwarya Ramamurthy (Last Updated: 3 July 2024)
   - [Recommendations](#recommendations)
 - [Conclusion](#conclusion)
 
-<style type="text/css";>
-    display:none;
+<style type="text/css">
+    display: none;
     h4.author{
      font-style:italic;
      font-size:15px;

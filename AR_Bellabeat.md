@@ -111,7 +111,7 @@ consented to the submission of their personal tracker data, including
 seconds-level heart rate data, minute-level, hour-level and day-level
 output for physical activity (calories, intensities, steps) and sleep
 monitoring. The downloaded dataset (onto local machine) consists of 18
-CSV (comma-separated values) files in both long (narrow) and wide
+CSV (comma-separated values) files in both long (narrow - 15 files) and wide (3 files)
 formats. An initial glimpse through the dataset suggests certain
 discrepancies and data unavailability, whose details are presented in
 the \*\*Process\* stage.
@@ -703,6 +703,8 @@ lapply(fitbit_df, head,n=3)
     ## 1 1503960366 5/2/2016 …     52.6         116.    22  22.6 TRUE           1.46e12
     ## 2 1503960366 5/3/2016 …     52.6         116.    NA  22.6 TRUE           1.46e12
     ## 3 1927972279 4/13/2016…    134.          294.    NA  47.5 FALSE          1.46e12
+
+The metrics stated in each dataframe are described in detail in the [Fitabase Dictionary](https://www.fitabase.com/media/1930/fitabasedatadictionary102320.pdf).
 
 ## 3.2 Data Cleaning
 

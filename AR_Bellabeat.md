@@ -2037,7 +2037,7 @@ Bellabeat being a brand for women would have pregnant and postpartum
 women as their customers who need extensive care and careful (accurate)
 logging of their vitals. However, the data logging frequency indicated
 only 3 users logging their sleep and 21 users their physical activity
-for all 31 days. Possible reasosn to avoid wearing the fitness tracker
+for all 31 days. Possible reasons to avoid wearing the fitness tracker
 could be due to its shorter battery life, prone to damage (unknowingly)
 during sleep, inability to manually log information, redundant data
 logging (regular schedules implies logging same bedtimes and physical

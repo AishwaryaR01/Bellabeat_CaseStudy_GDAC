@@ -2024,7 +2024,7 @@ on their wrist.
 Extending these trends to Bellabeat customers, a significant section may
 have to commute to their workplace (possibly follwing a 9am - 6pm
 schedule). In particular, desk jobs suggests higher amount of inactivity
-due to longer seating hourse (further adding to a sedentary activity
+due to longer seating hours (further adding to a sedentary activity
 behaviour). In addition, such office goers tend to spend time commuting
 to and fro office, gradually losing time and track of their personal
 health record. However, irrespective of the age group, some kind of

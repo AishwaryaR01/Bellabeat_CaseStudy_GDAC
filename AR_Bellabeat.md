@@ -2010,7 +2010,7 @@ This stacked barplot provides an overview of the frequency of data
 logging done by the fitness tracker users. Clearly, all 33 users track
 their daily physical activity parameters with 12 users logging their
 data for less than 31 days. Furthermore, only 24 users tracked and
-recorded their sleeping pattern metrics with 2 users possessing a
+recorded their sleeping pattern metrics with 3 users possessing a
 full-month personal health log. As previously mentioned, only 8 out of
 33 participants logged their weight information, however not on a
 regular (daily) basis. Overall, this data logging frequency data hints
